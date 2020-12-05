@@ -1,0 +1,734 @@
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: white;
+  color: #000000;
+  height: 100%;
+}
+
+h2 {
+  color: white;
+}
+
+.topContainer {
+  max-width: 1700px;
+  width: 96%;
+  background: white;
+  margin: auto;
+  overflow: hidden;
+}
+
+/*----Header Navigation Bar----*/
+
+header {
+  background: #ebf5ff;
+  margin-bottom: 0px;
+}
+
+.upperLogo {
+  float: left;
+  margin-top: 15px;
+  width: 163px;
+}
+
+nav {
+  float: right;
+  line-height: 70px;
+}
+
+nav li {
+  display: inline-block;
+  padding: 5px 20px;
+  margin: 10px;
+  line-height: normal;
+
+  background: rgba(255, 0, 0, 0.0);
+  border-color: rgba(255, 0, 0, 0.0);
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  text-align: center;
+}
+
+.logIn {
+  background: #fd487a;
+  border-radius: 7px;
+  color: white;
+  border: 1.5px solid #fd487a;
+  cursor: pointer;
+  /* padding: 5px 20px; */
+  /* box-sizing: content-box; */
+}
+
+.logIn:hover {
+  background: white;
+  border-radius: 7px;
+  color: #fd487a;
+  border: 1.5px solid #fd487a;
+}
+
+.logIn:hover > a {
+  color: #fd487a;
+}
+
+a {
+  color: black;
+}
+
+a:active {
+  color: #fd487a;
+}
+
+.logColor {
+  color: white;
+}
+
+.logColor:hover {
+  color: #fd487a;
+}
+
+.logColor:active {
+  color: #fd487a;
+}
+
+/* ---- Logo and Buttons ---- */
+
+.midContainer {
+  /* max-width: 1700px; */
+  width: 100%;
+  margin: auto;
+  background-color: #ebf5ff;
+  /* min-height: 40%; */
+  overflow: hidden;
+  padding-bottom: 50px;
+}
+
+.mainLogo {
+  display: block;
+  width: 77%;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin: 3% 8%; */
+  padding: 50px 20px;
+}
+
+.iPhoneLogo {
+  display: none;
+}
+
+button {
+  display: inline-block;
+
+  width: 128px;
+  height: 34px;
+  border-radius: 60px;
+
+  float: right;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+
+  margin-top: -10px;
+  margin-left: 20px;
+
+  outline: none;
+  cursor: pointer;
+
+}
+.menBtn, .profileBtn {
+  background: #fd487a;
+  color: white;
+  border: 1.5px solid #fd487a
+}
+
+.menBtn {
+  margin-right: 80px;
+}
+.menBtn:hover, .profileBtn:hover{
+  background: white;
+  color: #fd487a;
+  border: 1.5px solid #fd487a
+}
+
+.studBtn{
+  background: #ffffff;
+  color: #fd487a;
+  border: 1.5px solid #fd487a;
+}
+
+.studBtn:hover {
+  background: #fd487a;
+  color: white;
+  border: 1.5px solid #fd487a
+}
+
+.userInSec {
+  box-sizing: content-box;
+  display: none;
+  flex-direction: column;
+  align-items: flex-end;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  float: right;
+  padding-right: 50px;
+  margin-top: -20px;
+  /* display: none; */
+}
+.profileBtn {
+  display: block;
+
+  width: 160px;
+  height: 34px;
+  border-radius: 60px;
+
+  float: left;
+
+  margin-top:15px;
+
+  outline: none;
+  cursor: pointer;
+}
+
+/* ---- How it works section ---- */
+
+.containerTwo {
+  width: 100%;
+  /* max-width: 1700px; */
+  margin: auto;
+  background: #ffffff;
+  margin-top: 25px;
+  padding-top: 0px;
+  min-height: calc(100vh - 70px - 401.78px - 120px - 25px)
+}
+
+.containerThree {
+  width: 100%;
+  /* max-width: 1700px; */
+  margin: auto;
+  background: #ebf5ff;
+  margin-top: 25px;
+  padding-top: 0px;
+  padding-bottom: 40px;
+  min-height: calc(100vh - 70px - 401.78px - 120px - 25px)
+}
+
+h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 43px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+h5 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 43px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+.steps {
+  width: 90%;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+/* icons */
+.icons {
+  background: #ffffff;
+  width: 32%;
+  min-width: 290px;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  /* min-width: 396px; */
+}
+
+.steps2 {
+  background: #ebf5ff;
+  width: 30%;
+  height: 200px;
+  padding-top: 0px;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  /* min-width: 396px; */
+}
+
+.profile {
+  height: 130px;
+}
+.match {
+  height: 130px;
+}
+.connect {
+  height: 130px;
+}
+.med {
+  width: 400px;
+}
+
+h4 {
+  /* display: inline-block; */
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 12px;
+  margin-top: 25px;
+  text-align: center;
+  min-width: 300px;
+}
+
+h6 {
+  /* display: inline-block; */
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 12px;
+  margin-top: 25px;
+  text-align: center;
+  min-width: 550px;
+  margin-left: 30%;
+}
+
+.worksText {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.worksText2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* Statistics Section */
+
+.containerFour {
+  width: 100%;
+  /* max-width: 1700px; */
+  margin: auto;
+  background: #ffffff;
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-bottom: 40px;
+  min-height: calc(100vh - 70px - 401.78px - 120px - 25px)
+}
+
+.insMentStats {
+  box-sizing: content-box;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.leftSide, .rightSide {
+  box-sizing: content-box;
+  width: 50%;
+  min-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-top: 30px; */
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  color: black;
+  left:0px;
+  text-align: center;
+}
+
+/* .eachBoxL {
+  border-right: 2px solid #fd487a;
+} */
+
+.eachBoxL, .eachBoxR {
+  width: 100%;
+  height: 130px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  padding-top: 15px;
+  /* margin-top: 30px; */
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  color: black;
+  left:0px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.num {
+  margin: auto;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 100;
+}
+
+.descrip {
+  margin: auto;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+
+/* bottom section */
+.containerBottom {
+  /* max-width: 1700px; */
+  width: 100%;
+  height: 90px;
+  background: #ebf5ff;
+  padding-top: 25px;
+  padding-bottom: 5px;
+
+  display: flex;
+  flex-direction: column;
+
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+
+  font-style: normal;
+  font-size: 20px;
+
+  bottom: 0;
+
+}
+
+.contactUs {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+
+  margin-top: -5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+
+  width: 120px; /* changed */
+  height: 34px;
+  border-radius: 20px;
+
+  background: #fd487a;
+  color: white;
+  outline: none;
+  border: none;
+}
+
+.contactUs:hover {
+  color: #fd487a;
+  background: white;
+  border: 1.5px solid #fd487a
+}
+
+.infoText {
+  font-weight: 300;
+  line-height: 14px;
+  font-size: 12px;
+  text-align: center;
+
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+@media only screen and (max-width: 1050px) {
+  .med {
+    width: 300px;
+    margin-top: 20px;
+  }
+
+  .steps2 {
+    flex-direction: column;
+    height: 300px;
+  }
+
+  .worksText2 {
+    font-size: 16px;
+    line-height: 20px;
+    /* text-align: center; */
+    width: 80%;
+    /* margin-bottom: 100px; */
+    /* align-items: center */
+  }
+
+  h6 {
+    /* display: inline-block; */
+    font-size: 16px;
+    min-width: 300px;
+    margin-left: 0%;
+  }
+}
+
+
+
+/* iPhone and other tablet resizing */
+@media only screen and (max-width: 630px) {
+  .container {
+    max-width: 1700px;
+    width: 96%;
+    margin: auto;
+    padding-top: 0%;
+    padding-bottom: 20%;
+  }
+
+  .upperLogo {
+    float: left;
+    margin-top: 15px;
+    width: 100px;
+  }
+
+  nav {
+    float: right;
+    line-height: 50px;
+  }
+
+  nav li {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 10px;
+    line-height: normal;
+
+    background: rgba(255, 0, 0, 0.0);
+    border-color: rgba(255, 0, 0, 0.0);
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .mainLogo {
+    display: none;
+  }
+
+  .iPhoneLogo {
+    display: block;
+    width: 85%;
+    margin: 0% 3%;
+    padding: 60px 20px;
+  }
+
+  button {
+    display: inline-block;
+
+    width: 128px;
+    height: 34px;
+    border-radius: 60px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+
+    margin-top: -10px;
+
+  }
+  .menBtn {
+    float: right;
+    background: #fd487a;
+    margin-right: 10%;
+    color: white;
+    border: 1.5px solid #fd487a
+  }
+  .studBtn {
+    float: left;
+    background: #ffffff;
+    margin-left: 10%;
+    color: #fd487a;
+    border: 1.5px solid #fd487a;
+  }
+
+  .med {
+    width: 300px;
+    margin-top: 30px;
+  }
+
+  .worksText2 {
+    font-size: 16px;
+    line-height: 20px;
+    /* text-align: center;
+    width: 90%;
+    margin-bottom: 40px;
+    align-items: center; */
+  }
+
+  h6 {
+    /* display: inline-block; */
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    max-width: 300px;
+    margin-left: 0%;
+  }
+
+  .eachBoxL, .eachBoxR {
+    /* border-bottom: 2px solid #fd487a; */
+    border-right: none;
+    margin-top: 15px;
+  }
+
+  .num {
+    font-size: 80px;
+  }
+  .descrip {
+    font-size: 20px;
+  }
+
+  .userInSec {
+    align-items: center;
+    text-align: center;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    /* display: none; */
+  }
+
+  .contactUs {
+    width: 120px; /* changed */
+    height: 34px;
+    font-size: 14px;
+  }
+
+  .infoText {
+    font-weight: 300;
+    line-height: 24px;
+    line-height: 12px;
+    font-size: 10px;
+    text-align: center;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+}
+
+/* extreme iPhone and other tablet resizing like iPhone 5*/
+@media only screen and (max-width: 365px) {
+  .container {
+    max-width: 1700px;
+    width: 96%;
+    margin: auto;
+    padding-top: 0%;
+    padding-bottom: 20%;
+  }
+
+  .upperLogo {
+    float: left;
+    margin-top: 15px;
+    width: 100px;
+  }
+
+  nav {
+    float: right;
+    line-height: 50px;
+  }
+
+  nav li {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 3px; /* changed */
+    line-height: normal;
+
+    background: rgba(255, 0, 0, 0.0);
+    border-color: rgba(255, 0, 0, 0.0);
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .mainLogo {
+    display: none;
+  }
+
+  .iPhoneLogo {
+    display: block;
+    width: 85%;
+    margin: 0% 3%;
+    padding: 60px 20px;
+  }
+
+  button {
+    display: inline-block;
+
+    width: 110px; /* changed */
+    height: 34px;
+    border-radius: 60px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+
+    margin-top: -10px;
+
+  }
+  .menBtn {
+    float: right;
+    background: #fd487a;
+    margin-right: 10%;
+    color: white;
+    border: 1.5px solid #fd487a
+  }
+  .studBtn {
+    float: left;
+    background: #ffffff;
+    margin-left: 10%;
+    color: #fd487a;
+    border: 1.5px solid #fd487a;
+  }
+}
