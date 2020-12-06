@@ -5,7 +5,7 @@
     <title>LinkU</title>
     <link rel="icon" type = "image/png" href="LinkUlsimpLogo.png">
     <meta name = "viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css?v=1.0.0">
+    <link rel="stylesheet" href="signUp.css?v=1.0.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -21,11 +21,6 @@
     <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-database.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-functions.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-analytics.js"></script>
-
-    <!-- jQuery import -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
 
   </head>
 
@@ -54,21 +49,59 @@
       </div>
     </header>
 
-    <div class="midContainer">
-      <div class="separate">
-        <div class="theMainText">
-          <span class = "main1">Helping you meet new people during this isolated time</span>
-          <span class = "main2">Hello everyone this would be a longer text to explain what this shit does just adding random words rn but add shit soon</span>
-          <button class = "todayBut" id = "todayBut" href="medtorRegisterDec.html">
-            <a onclick = null href="signUp.html" style="text-decoration:none" class="signColor" id = "todayButIn">
-              Sign Up Today!
-            </a>
-          </li>
 
-        </div>
-        <img class="mainLogo" src="LinkUexpand.png">
+    <div class="middleContainer" id = "theForm">
+      <div class="headerText">
+        <img class = "profileLogo" src = "LinkUlsimpLogo.png">
+        <h3>Profile</h3>
       </div>
+      <!-- <hr> -->
+      <form name = "getEmail">
+        <div class="innerSection" id = "needLogIn">
+          <div class="description">
+            <span id = upperText>Enter your email below to create your profile</span>
+          </div>
+
+          <div class="form">
+            <input type="text" id = "emailInput" autocomplete="off" name = "email" required />
+            <label for="email" id = "labeler" class = "nameForInput">
+              <span class="codeText">Email</span>
+            </label>
+          </div>
+
+          <div class="form">
+            <input type="password" id = "passwordInput" autocomplete="off" name = "password" required />
+            <label for="password" id = "labeler1" class = "nameForInput">
+              <span class="codeText">Password</span>
+            </label>
+          </div>
+          <div class="lining">
+            <span>Forgot Password? Enter your email and
+            <a class = "resendV" onclick = "resetPassword(event)">click here</a>
+             to reset your password.</span>
+          </div>
+        </div>
+
+        <div class="innerSection" id = "loggedIn">
+          <div class="description">
+            <span id = "loggedInText">You have logged in.</span>
+            <br><br>
+            <a id = "emailV" class = "resendV" onclick = "sendVerification()">Click here to resend your verification email.</a>
+          </div>
+        </div>
+
+        <button onclick = "createAccount(event)" class="registerButton" id="registerBtn">Register</button>
+        <button onclick = "logIn(event)" class="registerButton" id="logInBtn">Log In</button>
+        <button onclick = "logOut(event)" class="logOutButton" id="logOutBtn">Log Out</button>
+
+        <a href="#" onclick = switchTo() class = "switchLink">
+          <span class = "switcher" id = "switcher">Already have an account? Log In</span>
+        </a>
+      </form>
+      <!-- <a href="medtorStudentCompletion.html"><button id="nextBtn">Next Page</button></a> -->
     </div>
+
+
 
     <div class="containerBottom">
       <article class="infoText">
@@ -79,7 +112,7 @@
       </article>
     </div>
 
-    <script src="medtorHome.js?1.2.4"></script>
+    <script src="signUp.js?1.2.4"></script>
 
   </body>
 </html>
